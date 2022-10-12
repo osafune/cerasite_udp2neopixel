@@ -1,0 +1,130 @@
+set_global_assignment -entity "udp2wsled_core" -library "udp2wsled_core" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "udp2wsled_core" -library "udp2wsled_core" -name IP_TOOL_VERSION "21.1"
+set_global_assignment -entity "udp2wsled_core" -library "udp2wsled_core" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "udp2wsled_core" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../udp2wsled_core.sopcinfo"]
+set_global_assignment -entity "udp2wsled_core" -library "udp2wsled_core" -name SLD_INFO "QSYS_NAME udp2wsled_core HAS_SOPCINFO 1 GENERATION_ID 1664541163"
+set_global_assignment -library "udp2wsled_core" -name MISC_FILE [file join $::quartus(qip_path) "../udp2wsled_core.cmp"]
+set_global_assignment -library "udp2wsled_core" -name SLD_FILE [file join $::quartus(qip_path) "udp2wsled_core.debuginfo"]
+set_global_assignment -entity "udp2wsled_core" -library "udp2wsled_core" -name IP_TARGETED_DEVICE_FAMILY "MAX 10"
+set_global_assignment -entity "udp2wsled_core" -library "udp2wsled_core" -name IP_GENERATED_DEVICE_FAMILY "{MAX 10}"
+set_global_assignment -entity "udp2wsled_core" -library "udp2wsled_core" -name IP_QSYS_MODE "SYSTEM"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "udp2wsled_core" -name MISC_FILE [file join $::quartus(qip_path) "../../udp2wsled_core.qsys"]
+set_global_assignment -entity "udp2wsled_core" -library "udp2wsled_core" -name IP_COMPONENT_NAME "dWRwMndzbGVkX2NvcmU="
+set_global_assignment -entity "udp2wsled_core" -library "udp2wsled_core" -name IP_COMPONENT_DISPLAY_NAME "dWRwMndzbGVkX2NvcmU="
+set_global_assignment -entity "udp2wsled_core" -library "udp2wsled_core" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "udp2wsled_core" -library "udp2wsled_core" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "udp2wsled_core" -library "udp2wsled_core" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "udp2wsled_core" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTY2NDU0MTE2Mw==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "udp2wsled_core" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::TUFYIDEw::QXV0byBERVZJQ0VfRkFNSUxZ"
+set_global_assignment -entity "udp2wsled_core" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::MTBNMDJEQ1YzNkM4Rw==::QXV0byBERVZJQ0U="
+set_global_assignment -entity "udp2wsled_core" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::OA==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
+set_global_assignment -entity "udp2wsled_core" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfNTBNX0NMT0NLX1JBVEU=::LTE=::QXV0byBDTE9DS19SQVRF"
+set_global_assignment -entity "udp2wsled_core" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfNTBNX0NMT0NLX0RPTUFJTg==::LTE=::QXV0byBDTE9DS19ET01BSU4="
+set_global_assignment -entity "udp2wsled_core" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfNTBNX1JFU0VUX0RPTUFJTg==::LTE=::QXV0byBSRVNFVF9ET01BSU4="
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_NAME "YWx0ZXJhX3Jlc2V0X2NvbnRyb2xsZXI="
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_DISPLAY_NAME "TWVybGluIFJlc2V0IENvbnRyb2xsZXI="
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_VERSION "MjEuMQ=="
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_DESCRIPTION "Rm9yIHN5c3RlbXMgd2l0aCBtdWx0aXBsZSByZXNldCBpbnB1dHMsIHRoZSBNZXJsaW4gUmVzZXQgQ29udHJvbGxlciBPUnMgYWxsIHJlc2V0IGlucHV0cyBhbmQgZ2VuZXJhdGVzIGEgc2luZ2xlIHJlc2V0IG91dHB1dC4="
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "TlVNX1JFU0VUX0lOUFVUUw==::MQ==::TnVtYmVyIG9mIGlucHV0cw=="
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "T1VUUFVUX1JFU0VUX1NZTkNfRURHRVM=::ZGVhc3NlcnQ=::T3V0cHV0IFJlc2V0IFN5bmNocm9ub3VzIEVkZ2Vz"
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "U1lOQ19ERVBUSA==::Mg==::U3luY2hyb25pemVyIGRlcHRo"
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "UkVTRVRfUkVRVUVTVF9QUkVTRU5U::MA==::UmVzZXQgcmVxdWVzdCBsb2dpYyBlbmFibGU="
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "UkVTRVRfUkVRX1dBSVRfVElNRQ==::MQ==::UmVzZXQgcmVxdWVzdCB3YWl0IHRpbWU="
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "TUlOX1JTVF9BU1NFUlRJT05fVElNRQ==::Mw==::TWluaW11bSByZXNldCBhc3NlcnRpb24gdGltZQ=="
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "UkVTRVRfUkVRX0VBUkxZX0RTUlRfVElNRQ==::MQ==::UmVzZXQgcmVxdWVzdCBkZWFzc2VydCB0aW1pbmc="
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4w::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjA="
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4x::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjE="
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4y::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjI="
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4z::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjM="
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU40::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjQ="
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU41::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjU="
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU42::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjY="
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU43::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjc="
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU44::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjg="
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU45::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjk="
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xMA==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjEw"
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xMQ==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjEx"
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xMg==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjEy"
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xMw==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjEz"
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xNA==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjE0"
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU4xNQ==::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcG9ydCByZXNldF9pbjE1"
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "VVNFX1JFU0VUX1JFUVVFU1RfSU5QVVQ=::MA==::RW5hYmxlIHJlc2V0X3JlcSBmb3IgcmVzZXRfaW5wdXRz"
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "QURBUFRfUkVTRVRfUkVRVUVTVA==::MA==::T25seSBhZGFwdCBvbmx5IHJlc2V0IHJlcXVlc3Q="
+set_global_assignment -entity "peridot_ethio_wsled" -library "udp2wsled_core" -name IP_COMPONENT_NAME "cGVyaWRvdF9ldGhpb193c2xlZA=="
+set_global_assignment -entity "peridot_ethio_wsled" -library "udp2wsled_core" -name IP_COMPONENT_DISPLAY_NAME "UEVSSURPVCBBdmFsb24tU1QgU2VyaWFsIExFRCBEcml2ZXI="
+set_global_assignment -entity "peridot_ethio_wsled" -library "udp2wsled_core" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "peridot_ethio_wsled" -library "udp2wsled_core" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "peridot_ethio_wsled" -library "udp2wsled_core" -name IP_COMPONENT_AUTHOR "Si03U1lTVEVNIFdPUktTIExJTUlURUQ="
+set_global_assignment -entity "peridot_ethio_wsled" -library "udp2wsled_core" -name IP_COMPONENT_VERSION "MjAuMQ=="
+set_global_assignment -entity "peridot_ethio_wsled" -library "udp2wsled_core" -name IP_COMPONENT_DESCRIPTION "UEVSSURPVCBBdmFsb24tU1QgU2VyaWFsIExFRCBEcml2ZXI="
+set_global_assignment -entity "peridot_ethio_wsled" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "QklUX1BFUklPRF9DT1VOVA==::NjM=::QklUX1BFUklPRF9DT1VOVA=="
+set_global_assignment -entity "peridot_ethio_wsled" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "U1lNQk9MMV9DT1VOVA==::NDU=::U1lNQk9MMV9DT1VOVA=="
+set_global_assignment -entity "peridot_ethio_wsled" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "U1lNQk9MMF9DT1VOVA==::MTg=::U1lNQk9MMF9DT1VOVA=="
+set_global_assignment -entity "peridot_ethio_wsled" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "UkVTRVRfQklUQ09VTlQ=::MjIz::UkVTRVRfQklUQ09VTlQ="
+set_global_assignment -entity "peridot_ethio_wsled" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "TEVEX1NFVFRJTkdTX0JJVFBFUklPRA==::MTI1MA==::UGVyaW9kIG9mIG9uZSBiaXQgKDYwMC0yNTAwKQ=="
+set_global_assignment -entity "peridot_ethio_wsled" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "TEVEX1NFVFRJTkdTX0JJVFNZTUJPTDA=::MzUw::J0gnIHNpZ25hbCB0aW1lIG9mIHN5bWJvbC0wICgxNTAtNTAwKQ=="
+set_global_assignment -entity "peridot_ethio_wsled" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "TEVEX1NFVFRJTkdTX0JJVFNZTUJPTDE=::OTAw::J0gnIHNpZ25hbCB0aW1lIG9mIHN5bWJvbC0xICg1MDAtMTYwMCk="
+set_global_assignment -entity "peridot_ethio_wsled" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "TEVEX1NFVFRJTkdTX1JFU0VUV0lEVEg=::Mjgw::UHVsc2Ugd2lkdGggb2Ygc3ltYm9sLXJlc2V0ICg1MC0xMDAwKQ=="
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_NAME "cGVyaWRvdF9ldGhpbw=="
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_DISPLAY_NAME "UEVSSURPVCBFdGhlcm5ldCBJL08gQnJpZGdlIChBbHBoYSB0ZXN0IHZlcnNpb24p"
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_AUTHOR "Si03U1lTVEVNIFdPUktTIExJTUlURUQ="
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_VERSION "MjAuMQ=="
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_DESCRIPTION "UEVSSURPVCBFdGhlcm5ldCBJL08gQnJpZGdl"
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "UlhGSUZPX1NJWkU=::NDA5Ng==::TUFDIGZyYW1lIFJYLUZJRk8gU2l6ZQ=="
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "VFhGSUZPX1NJWkU=::NDA5Ng==::TUFDIGZyYW1lIFRYLUZJRk8gU2l6ZQ=="
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "RklGT19CTE9DS1NJWkU=::NjQ=::RklGT19CTE9DS1NJWkU="
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "U1VQUE9SVF9TUEVFRF8xME0=::MA==::U3VwcG9ydCAxME1icHMgbW9kZS4="
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "U1VQUE9SVF9IQVJGRFVQTEVY::MA==::U3VwcG9ydCBoYWxmLWR1cGxleCBtb2RlLg=="
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "U1VQUE9SVF9QQVVTRUZSQU1F::MA==::U3VwcG9ydCBQQVVTRSBmcmFtZS4="
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "TVRVX1NJWkU=::MTUwMA==::TVRVIFNpemUgKDU3Ni0xNTAwKQ=="
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "RU5BQkxFX1VEUF9DSEVDS1NVTQ==::MA==::RW5hYmxlIFVEUCBoZWFkZXIgY2hlY2tzdW0u"
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "RklYRURfTUFDX0FERFJFU1M=::MA==::RklYRURfTUFDX0FERFJFU1M="
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "RklYRURfSVBfQUREUkVTUw==::MA==::RklYRURfSVBfQUREUkVTUw=="
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "RklYRURfVURQX1BPUlQ=::MTYyNDE=::RklYRURfVURQX1BPUlQ="
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "RklYRURfUEFVU0VfTEVTUw==::MA==::RklYRURfUEFVU0VfTEVTUw=="
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "RklYRURfUEFVU0VfVkFMVUU=::MA==::RklYRURfUEFVU0VfVkFMVUU="
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "U1VQUE9SVF9NRU1PUllIT1NU::MA==::VXNlIEF2YWxvbi1NTSBtZW1vcnkgaG9zdCBpbnRlcmZhY2Uu"
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "U1VQUE9SVF9TVFJFQU1GSUZP::MQ==::VXNlIEF2YWxvbi1TVCBzdHJlYW0gaW50ZXJmYWNlLg=="
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "U1JDRklGT19OVU1CRVI=::NA==::TnVtYmVyIG9mIFNvdXJjZSBwb3J0cw=="
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "U0lOS0ZJRk9fTlVNQkVS::MA==::TnVtYmVyIG9mIFNpbmsgcG9ydHM="
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "U1JDRklGT18wX1NJWkU=::MTAyNA==::U291cmNlIDAgRklGTyBTaXpl"
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "U1JDRklGT18xX1NJWkU=::MTAyNA==::U291cmNlIDEgRklGTyBTaXpl"
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "U1JDRklGT18yX1NJWkU=::MTAyNA==::U291cmNlIDIgRklGTyBTaXpl"
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "U1JDRklGT18zX1NJWkU=::MTAyNA==::U291cmNlIDMgRklGTyBTaXpl"
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "VVNFX0ZJWEVEX01BQ0FERFI=::ZmFsc2U=::VXNlIGZpeGVkIE1BQyBhZGRyZXNzIChOSUMgSUQpLg=="
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "VVNFX0ZJWEVEX0lQQUREUg==::ZmFsc2U=::VXNlIGZpeGVkIElQIGFkZHJlc3Mu"
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "VVNFX0ZJWEVEX1VEUFBPUlQ=::dHJ1ZQ==::VXNlIGZpeGVkIFVEUCBwb3J0cyBudW1iZXIu"
+set_global_assignment -entity "peridot_ethio" -library "udp2wsled_core" -name IP_COMPONENT_PARAMETER "VURQUE9SVF9WQUxVRQ==::MTYyNDE=::VURQIExpc3RlbiBwb3J0"
+
+set_global_assignment -library "udp2wsled_core" -name VERILOG_FILE [file join $::quartus(qip_path) "udp2wsled_core.v"]
+set_global_assignment -library "udp2wsled_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
+set_global_assignment -library "udp2wsled_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_synchronizer.v"]
+set_global_assignment -library "udp2wsled_core" -name SDC_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.sdc"]
+set_global_assignment -library "udp2wsled_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/peridot_ethio_wsled.v"]
+set_global_assignment -library "udp2wsled_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/peridot_ethio.v"]
+set_global_assignment -library "udp2wsled_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/peridot_ethio_avmm.v"]
+set_global_assignment -library "udp2wsled_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/peridot_ethio_avmm_arbiter.v"]
+set_global_assignment -library "udp2wsled_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/peridot_ethio_avstserver.v"]
+set_global_assignment -library "udp2wsled_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/peridot_ethio_cdb.v"]
+set_global_assignment -library "udp2wsled_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/peridot_ethio_crc32.v"]
+set_global_assignment -library "udp2wsled_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/peridot_ethio_dpram.v"]
+set_global_assignment -library "udp2wsled_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/peridot_ethio_memfifo.v"]
+set_global_assignment -library "udp2wsled_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/peridot_ethio_reset.v"]
+set_global_assignment -library "udp2wsled_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/peridot_ethio_rmii_rx.v"]
+set_global_assignment -library "udp2wsled_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/peridot_ethio_rmii_tx.v"]
+set_global_assignment -library "udp2wsled_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/peridot_ethio_rxctrl.v"]
+set_global_assignment -library "udp2wsled_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/peridot_ethio_scfifo.v"]
+set_global_assignment -library "udp2wsled_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/peridot_ethio_stream.v"]
+set_global_assignment -library "udp2wsled_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/peridot_ethio_txctrl.v"]
+set_global_assignment -library "udp2wsled_core" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/peridot_ethio_udp2packet.v"]
+set_global_assignment -library "udp2wsled_core" -name SDC_FILE [file join $::quartus(qip_path) "submodules/peridot_ethio.sdc"]
+
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_TOOL_NAME "altera_reset_controller"
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_TOOL_VERSION "21.1"
+set_global_assignment -entity "altera_reset_controller" -library "udp2wsled_core" -name IP_TOOL_ENV "Qsys"

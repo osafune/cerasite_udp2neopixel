@@ -1,0 +1,59 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\PROJECT\c87_sodalite\C-02\fpga\c02_udp2wsled\udp2wsled_core.qsys --block-symbol-file --output-directory=C:\PROJECT\c87_sodalite\C-02\fpga\c02_udp2wsled\udp2wsled_core --family="MAX 10" --part=10M02DCV36C8G
+Progress: Loading c02_udp2wsled/udp2wsled_core.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 21.1]
+Progress: Parameterizing module clk_0
+Progress: Adding peridot_ethio_0 [peridot_ethio 20.1]
+Progress: Parameterizing module peridot_ethio_0
+Progress: Adding peridot_serialled_0 [peridot_serialled 20.1]
+Progress: Parameterizing module peridot_serialled_0
+Progress: Adding peridot_serialled_1 [peridot_serialled 20.1]
+Progress: Parameterizing module peridot_serialled_1
+Progress: Adding peridot_serialled_2 [peridot_serialled 20.1]
+Progress: Parameterizing module peridot_serialled_2
+Progress: Adding peridot_serialled_3 [peridot_serialled 20.1]
+Progress: Parameterizing module peridot_serialled_3
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: udp2wsled_core.peridot_serialled_0: Output timing : T0H = 360.0ns, T0L = 900.0ns, T1H = 900.0ns, T1L = 360.0ns, RES = 281.0us
+Info: udp2wsled_core.peridot_serialled_1: Output timing : T0H = 360.0ns, T0L = 900.0ns, T1H = 900.0ns, T1L = 360.0ns, RES = 281.0us
+Info: udp2wsled_core.peridot_serialled_2: Output timing : T0H = 360.0ns, T0L = 900.0ns, T1H = 900.0ns, T1L = 360.0ns, RES = 281.0us
+Info: udp2wsled_core.peridot_serialled_3: Output timing : T0H = 360.0ns, T0L = 900.0ns, T1H = 900.0ns, T1L = 360.0ns, RES = 281.0us
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\PROJECT\c87_sodalite\C-02\fpga\c02_udp2wsled\udp2wsled_core.qsys --synthesis=VERILOG --output-directory=C:\PROJECT\c87_sodalite\C-02\fpga\c02_udp2wsled\udp2wsled_core\synthesis --family="MAX 10" --part=10M02DCV36C8G
+Progress: Loading c02_udp2wsled/udp2wsled_core.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 21.1]
+Progress: Parameterizing module clk_0
+Progress: Adding peridot_ethio_0 [peridot_ethio 20.1]
+Progress: Parameterizing module peridot_ethio_0
+Progress: Adding peridot_serialled_0 [peridot_serialled 20.1]
+Progress: Parameterizing module peridot_serialled_0
+Progress: Adding peridot_serialled_1 [peridot_serialled 20.1]
+Progress: Parameterizing module peridot_serialled_1
+Progress: Adding peridot_serialled_2 [peridot_serialled 20.1]
+Progress: Parameterizing module peridot_serialled_2
+Progress: Adding peridot_serialled_3 [peridot_serialled 20.1]
+Progress: Parameterizing module peridot_serialled_3
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: udp2wsled_core.peridot_serialled_0: Output timing : T0H = 360.0ns, T0L = 900.0ns, T1H = 900.0ns, T1L = 360.0ns, RES = 281.0us
+Info: udp2wsled_core.peridot_serialled_1: Output timing : T0H = 360.0ns, T0L = 900.0ns, T1H = 900.0ns, T1L = 360.0ns, RES = 281.0us
+Info: udp2wsled_core.peridot_serialled_2: Output timing : T0H = 360.0ns, T0L = 900.0ns, T1H = 900.0ns, T1L = 360.0ns, RES = 281.0us
+Info: udp2wsled_core.peridot_serialled_3: Output timing : T0H = 360.0ns, T0L = 900.0ns, T1H = 900.0ns, T1L = 360.0ns, RES = 281.0us
+Info: udp2wsled_core: Generating udp2wsled_core "udp2wsled_core" for QUARTUS_SYNTH
+Info: peridot_ethio_0: generating top-level entity peridot_ethio
+Info: peridot_ethio_0: "udp2wsled_core" instantiated peridot_ethio "peridot_ethio_0"
+Info: peridot_serialled_0: "udp2wsled_core" instantiated peridot_serialled "peridot_serialled_0"
+Info: rst_controller: "udp2wsled_core" instantiated altera_reset_controller "rst_controller"
+Info: udp2wsled_core: Done "udp2wsled_core" with 4 modules, 22 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

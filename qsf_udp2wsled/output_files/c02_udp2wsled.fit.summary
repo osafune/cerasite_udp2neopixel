@@ -1,0 +1,18 @@
+Fitter Status : Successful - Tue Oct 11 15:26:20 2022
+Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+Revision Name : c02_udp2wsled
+Top-level Entity Name : c02_udp2wsled
+Family : MAX 10
+Device : 10M02DCV36C8G
+Timing Models : Final
+Total logic elements : 2,039 / 2,304 ( 88 % )
+    Total combinational functions : 1,962 / 2,304 ( 85 % )
+    Dedicated logic registers : 943 / 2,304 ( 41 % )
+Total registers : 949
+Total pins : 14 / 27 ( 52 % )
+Total virtual pins : 0
+Total memory bits : 98,304 / 110,592 ( 89 % )
+Embedded Multiplier 9-bit elements : 0 / 32 ( 0 % )
+Total PLLs : 1 / 1 ( 100 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0

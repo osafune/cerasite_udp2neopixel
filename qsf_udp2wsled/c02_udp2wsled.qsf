@@ -1,0 +1,136 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 17.1.1 Internal Build 593 12/11/2017 SJ Standard Edition
+# Date created = 11:56:10  November 26, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		c02_ledcontroller_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M02DCV36C8G
+set_global_assignment -name TOP_LEVEL_ENTITY c02_udp2wsled
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.1.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:56:10  NOVEMBER 26, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION "21.1.1 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name ENABLE_CONFIGURATION_PINS ON
+set_global_assignment -name ENABLE_JTAG_PIN_SHARING OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name EXTERNAL_FLASH_FALLBACK_ADDRESS 00000000
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "PASSIVE SERIAL"
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name INTERNAL_FLASH_UPDATE_MODE "SINGLE IMAGE"
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVCMOS"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name USE_CHECKSUM_AS_USERCODE OFF
+set_global_assignment -name STRATIX_JTAG_USER_CODE A0221011
+
+
+
+# Pin & Location Assignments
+# ===========================
+
+#set_location_assignment PIN_A4 -to N_CONFIG
+#set_location_assignment PIN_C2 -to JTAG_EN
+#set_location_assignment PIN_C3 -to JTAG_TMS
+#set_location_assignment PIN_D3 -to JTAG_TCK
+#set_location_assignment PIN_C1 -to JTAG_TDI
+#set_location_assignment PIN_D2 -to JTAG_TDO
+set_location_assignment PIN_C2 -to RESET_N
+
+set_location_assignment PIN_D1 -to OSC_OE
+set_location_assignment PIN_E1 -to CLOCK_50
+set_location_assignment PIN_A5 -to LED
+#set_location_assignment PIN_F3 -to PIO[0]
+#set_location_assignment PIN_F2 -to PIO[1]
+#set_location_assignment PIN_F4 -to PIO[2]
+#set_location_assignment PIN_E3 -to PIO[3]
+#set_location_assignment PIN_C5 -to PIO[4]
+#set_location_assignment PIN_B6 -to PIO[5]
+#set_location_assignment PIN_D5 -to PIO[6]
+#set_location_assignment PIN_C6 -to PIO[7]
+#set_location_assignment PIN_D6 -to PIO[8]
+#set_location_assignment PIN_E6 -to PIO[9]
+#set_location_assignment PIN_E5 -to PIO[10]
+#set_location_assignment PIN_E4 -to PIO[11]
+
+
+#set_location_assignment PIN_F3 -to PIO[0]
+set_location_assignment PIN_F2 -to RMII_CLK
+set_location_assignment PIN_F4 -to WSLED[0]
+set_location_assignment PIN_E3 -to WSLED[1]
+set_location_assignment PIN_C5 -to WSLED[2]
+set_location_assignment PIN_B6 -to WSLED[3]
+set_location_assignment PIN_D5 -to RMII_TXD[1]
+set_location_assignment PIN_C6 -to RMII_TXD[0]
+set_location_assignment PIN_D6 -to RMII_TXEN
+set_location_assignment PIN_E6 -to RMII_RXD[1]
+set_location_assignment PIN_E5 -to RMII_RXD[0]
+set_location_assignment PIN_E4 -to RMII_CRSDV
+
+
+
+# Pin Settings Assignments
+# ==========================
+
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to RMII_*
+
+
+
+# Project files Assignments
+# ==========================
+
+set_global_assignment -name QIP_FILE ip/pll/syspll.qip
+set_global_assignment -name QIP_FILE udp2wsled_core/synthesis/udp2wsled_core.qip
+set_global_assignment -name VERILOG_FILE c02_udp2wsled.v
+set_global_assignment -name SDC_FILE cerasite_c02_top.sdc
+
+
+
+# Compile Settings Assignments
+# =============================
+
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

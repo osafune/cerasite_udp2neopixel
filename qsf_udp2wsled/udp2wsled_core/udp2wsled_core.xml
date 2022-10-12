@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2022.09.30.21:32:44"
+ outputDirectory="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="MAX 10"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10M02DCV36C8G"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="8"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_50M_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_50M_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_50M_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk_50m" kind="clock" start="0">
+   <property name="clockRate" value="50000000" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_50m_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="ethio" kind="conduit" start="0">
+   <property name="associatedClock" value="clk_50m" />
+   <property name="associatedReset" value="reset" />
+   <port name="ethio_enable" direction="input" role="enable" width="1" />
+   <port name="ethio_status" direction="output" role="status" width="3" />
+  </interface>
+  <interface name="ipaddr" kind="conduit" start="0">
+   <property name="associatedClock" value="clk_50m" />
+   <property name="associatedReset" value="reset" />
+   <port name="ipaddr_value" direction="input" role="value" width="32" />
+  </interface>
+  <interface name="macaddr" kind="conduit" start="0">
+   <property name="associatedClock" value="clk_50m" />
+   <property name="associatedReset" value="reset" />
+   <port name="macaddr_value" direction="input" role="value" width="48" />
+  </interface>
+  <interface name="reset" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="reset_reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="rmii" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="rmii_clk" direction="input" role="clk" width="1" />
+   <port name="rmii_rxd" direction="input" role="rxd" width="2" />
+   <port name="rmii_crs_dv" direction="input" role="crs_dv" width="1" />
+   <port name="rmii_txd" direction="output" role="txd" width="2" />
+   <port name="rmii_tx_en" direction="output" role="tx_en" width="1" />
+  </interface>
+  <interface name="wsled0" kind="conduit" start="0">
+   <property name="associatedClock" value="clk_50m" />
+   <property name="associatedReset" value="reset" />
+   <port name="wsled0_out" direction="output" role="out" width="1" />
+  </interface>
+  <interface name="wsled1" kind="conduit" start="0">
+   <property name="associatedClock" value="clk_50m" />
+   <property name="associatedReset" value="reset" />
+   <port name="wsled1_out" direction="output" role="out" width="1" />
+  </interface>
+  <interface name="wsled2" kind="conduit" start="0">
+   <property name="associatedClock" value="clk_50m" />
+   <property name="associatedReset" value="reset" />
+   <port name="wsled2_out" direction="output" role="out" width="1" />
+  </interface>
+  <interface name="wsled3" kind="conduit" start="0">
+   <property name="associatedClock" value="clk_50m" />
+   <property name="associatedReset" value="reset" />
+   <port name="wsled3_out" direction="output" role="out" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="udp2wsled_core:1.0:AUTO_CLK_50M_CLOCK_DOMAIN=-1,AUTO_CLK_50M_CLOCK_RATE=-1,AUTO_CLK_50M_RESET_DOMAIN=-1,AUTO_DEVICE=10M02DCV36C8G,AUTO_DEVICE_FAMILY=MAX 10,AUTO_DEVICE_SPEEDGRADE=8,AUTO_GENERATION_ID=1664541163,AUTO_UNIQUE_ID=(clock_source:21.1:clockFrequency=50000000,clockFrequencyKnown=true,inputClockFrequency=0,resetSynchronousEdges=NONE)(peridot_ethio:20.1:AVALONMM_FASTMODE=0,DEVICE_FAMILY=MAX 10,ENABLE_UDP_CHECKSUM=0,FIFO_BLOCKSIZE=64,FIXED_IP_ADDRESS=0,FIXED_MAC_ADDRESS=0,FIXED_PAUSE_LESS=0,FIXED_PAUSE_VALUE=0,FIXED_UDP_PORT=16241,IGNORE_RXFCS_CHECK=0,IPADDR_VALUE=3232235890,MACADDR_VALUE=280375448305665,MTU_SIZE=1500,PART_NAME=10M02DCV36C8G,PAUSEFRAME_VALUE=65535,PAUSELESS_VALUE=0,RXFIFO_SIZE=4096,SINKFIFO_0_SIZE=2048,SINKFIFO_1_SIZE=2048,SINKFIFO_2_SIZE=2048,SINKFIFO_3_SIZE=2048,SINKFIFO_NUMBER=0,SRCFIFO_0_SIZE=1024,SRCFIFO_1_SIZE=1024,SRCFIFO_2_SIZE=1024,SRCFIFO_3_SIZE=1024,SRCFIFO_NUMBER=4,SUPPORT_HARFDUPLEX=0,SUPPORT_MEMORYHOST=0,SUPPORT_PAUSEFRAME=0,SUPPORT_SPEED_10M=0,SUPPORT_STREAMFIFO=1,TXFIFO_SIZE=4096,UDPPORT_VALUE=16241,USE_FIXED_IPADDR=false,USE_FIXED_MACADDR=false,USE_FIXED_PAUSE=true,USE_FIXED_UDPPORT=true)(peridot_serialled:20.1:BIT_PERIOD_COUNT=63,CLOCKFREQ=50000000,DEVICE_FAMILY=MAX 10,LED_SETTINGS_BITPERIOD=1250,LED_SETTINGS_BITSYMBOL0=350,LED_SETTINGS_BITSYMBOL1=900,LED_SETTINGS_RESETWIDTH=280,PART_NAME=10M02DCV36C8G,RESET_BITCOUNT=223,SYMBOL0_COUNT=18,SYMBOL1_COUNT=45)(peridot_serialled:20.1:BIT_PERIOD_COUNT=63,CLOCKFREQ=50000000,DEVICE_FAMILY=MAX 10,LED_SETTINGS_BITPERIOD=1250,LED_SETTINGS_BITSYMBOL0=350,LED_SETTINGS_BITSYMBOL1=900,LED_SETTINGS_RESETWIDTH=280,PART_NAME=10M02DCV36C8G,RESET_BITCOUNT=223,SYMBOL0_COUNT=18,SYMBOL1_COUNT=45)(peridot_serialled:20.1:BIT_PERIOD_COUNT=63,CLOCKFREQ=50000000,DEVICE_FAMILY=MAX 10,LED_SETTINGS_BITPERIOD=1250,LED_SETTINGS_BITSYMBOL0=350,LED_SETTINGS_BITSYMBOL1=900,LED_SETTINGS_RESETWIDTH=280,PART_NAME=10M02DCV36C8G,RESET_BITCOUNT=223,SYMBOL0_COUNT=18,SYMBOL1_COUNT=45)(peridot_serialled:20.1:BIT_PERIOD_COUNT=63,CLOCKFREQ=50000000,DEVICE_FAMILY=MAX 10,LED_SETTINGS_BITPERIOD=1250,LED_SETTINGS_BITSYMBOL0=350,LED_SETTINGS_BITSYMBOL1=900,LED_SETTINGS_RESETWIDTH=280,PART_NAME=10M02DCV36C8G,RESET_BITCOUNT=223,SYMBOL0_COUNT=18,SYMBOL1_COUNT=45)(avalon_streaming:21.1:)(avalon_streaming:21.1:)(avalon_streaming:21.1:)(avalon_streaming:21.1:)(clock:21.1:)(clock:21.1:)(clock:21.1:)(clock:21.1:)(clock:21.1:)(reset:21.1:)(reset:21.1:)(reset:21.1:)(reset:21.1:)(reset:21.1:)"
+   instancePathKey="udp2wsled_core"
+   kind="udp2wsled_core"
+   version="1.0"
+   name="udp2wsled_core">
+  <parameter name="AUTO_CLK_50M_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_50M_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="1664541163" />
+  <parameter name="AUTO_DEVICE" value="10M02DCV36C8G" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="MAX 10" />
+  <parameter name="AUTO_CLK_50M_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="8" />
+  <generatedFiles>
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/udp2wsled_core.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio.v"
+       type="VERILOG"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_avmm.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_avmm_arbiter.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_avstserver.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_cdb.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_crc32.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_dpram.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_memfifo.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_reset.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_rmii_rx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_rmii_tx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_rxctrl.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_scfifo.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_stream.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_txctrl.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_udp2packet.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio.sdc"
+       type="SDC"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_wsled.v"
+       type="VERILOG"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/altera_reset_controller.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/altera_reset_synchronizer.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/altera_reset_controller.sdc"
+       type="SDC"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/PROJECT/PERIDOT/peridot_peripherals/peridot_ethio/peridot_ethio_hw.tcl" />
+   <file
+       path="C:/PROJECT/PERIDOT/peridot_peripherals/peridot_ethio/peridot_ethio_wsled_hw.tcl" />
+   <file
+       path="C:/develop/quartus/21.1.1le/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="udp2wsled_core">queue size: 0 starting:udp2wsled_core "udp2wsled_core"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>6</b> modules, <b>14</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug" culprit="reset_adaptation_transform"><![CDATA[After transform: <b>7</b> modules, <b>16</b> connections]]></message>
+   <message level="Debug" culprit="udp2wsled_core"><![CDATA["<b>udp2wsled_core</b>" reuses <b>peridot_ethio</b> "<b>submodules/peridot_ethio</b>"]]></message>
+   <message level="Debug" culprit="udp2wsled_core"><![CDATA["<b>udp2wsled_core</b>" reuses <b>peridot_serialled</b> "<b>submodules/peridot_ethio_wsled</b>"]]></message>
+   <message level="Debug" culprit="udp2wsled_core"><![CDATA["<b>udp2wsled_core</b>" reuses <b>peridot_serialled</b> "<b>submodules/peridot_ethio_wsled</b>"]]></message>
+   <message level="Debug" culprit="udp2wsled_core"><![CDATA["<b>udp2wsled_core</b>" reuses <b>peridot_serialled</b> "<b>submodules/peridot_ethio_wsled</b>"]]></message>
+   <message level="Debug" culprit="udp2wsled_core"><![CDATA["<b>udp2wsled_core</b>" reuses <b>peridot_serialled</b> "<b>submodules/peridot_ethio_wsled</b>"]]></message>
+   <message level="Debug" culprit="udp2wsled_core"><![CDATA["<b>udp2wsled_core</b>" reuses <b>altera_reset_controller</b> "<b>submodules/altera_reset_controller</b>"]]></message>
+   <message level="Debug" culprit="udp2wsled_core">queue size: 5 starting:peridot_ethio "submodules/peridot_ethio"</message>
+   <message level="Info" culprit="peridot_ethio_0">generating top-level entity peridot_ethio</message>
+   <message level="Info" culprit="peridot_ethio_0"><![CDATA["<b>udp2wsled_core</b>" instantiated <b>peridot_ethio</b> "<b>peridot_ethio_0</b>"]]></message>
+   <message level="Debug" culprit="udp2wsled_core">queue size: 4 starting:peridot_serialled "submodules/peridot_ethio_wsled"</message>
+   <message level="Info" culprit="peridot_serialled_0"><![CDATA["<b>udp2wsled_core</b>" instantiated <b>peridot_serialled</b> "<b>peridot_serialled_0</b>"]]></message>
+   <message level="Debug" culprit="udp2wsled_core">queue size: 0 starting:altera_reset_controller "submodules/altera_reset_controller"</message>
+   <message level="Info" culprit="rst_controller"><![CDATA["<b>udp2wsled_core</b>" instantiated <b>altera_reset_controller</b> "<b>rst_controller</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="peridot_ethio:20.1:AVALONMM_FASTMODE=0,DEVICE_FAMILY=MAX 10,ENABLE_UDP_CHECKSUM=0,FIFO_BLOCKSIZE=64,FIXED_IP_ADDRESS=0,FIXED_MAC_ADDRESS=0,FIXED_PAUSE_LESS=0,FIXED_PAUSE_VALUE=0,FIXED_UDP_PORT=16241,IGNORE_RXFCS_CHECK=0,IPADDR_VALUE=3232235890,MACADDR_VALUE=280375448305665,MTU_SIZE=1500,PART_NAME=10M02DCV36C8G,PAUSEFRAME_VALUE=65535,PAUSELESS_VALUE=0,RXFIFO_SIZE=4096,SINKFIFO_0_SIZE=2048,SINKFIFO_1_SIZE=2048,SINKFIFO_2_SIZE=2048,SINKFIFO_3_SIZE=2048,SINKFIFO_NUMBER=0,SRCFIFO_0_SIZE=1024,SRCFIFO_1_SIZE=1024,SRCFIFO_2_SIZE=1024,SRCFIFO_3_SIZE=1024,SRCFIFO_NUMBER=4,SUPPORT_HARFDUPLEX=0,SUPPORT_MEMORYHOST=0,SUPPORT_PAUSEFRAME=0,SUPPORT_SPEED_10M=0,SUPPORT_STREAMFIFO=1,TXFIFO_SIZE=4096,UDPPORT_VALUE=16241,USE_FIXED_IPADDR=false,USE_FIXED_MACADDR=false,USE_FIXED_PAUSE=true,USE_FIXED_UDPPORT=true"
+   instancePathKey="udp2wsled_core:.:peridot_ethio_0"
+   kind="peridot_ethio"
+   version="20.1"
+   name="peridot_ethio">
+  <parameter name="FIXED_PAUSE_LESS" value="0" />
+  <parameter name="MACADDR_VALUE" value="280375448305665" />
+  <parameter name="DEVICE_FAMILY" value="MAX 10" />
+  <parameter name="FIXED_UDP_PORT" value="16241" />
+  <parameter name="SUPPORT_MEMORYHOST" value="0" />
+  <parameter name="TXFIFO_SIZE" value="4096" />
+  <parameter name="SINKFIFO_NUMBER" value="0" />
+  <parameter name="FIXED_IP_ADDRESS" value="0" />
+  <parameter name="SINKFIFO_0_SIZE" value="2048" />
+  <parameter name="SRCFIFO_2_SIZE" value="1024" />
+  <parameter name="USE_FIXED_UDPPORT" value="true" />
+  <parameter name="PART_NAME" value="10M02DCV36C8G" />
+  <parameter name="IPADDR_VALUE" value="3232235890" />
+  <parameter name="SUPPORT_HARFDUPLEX" value="0" />
+  <parameter name="SINKFIFO_1_SIZE" value="2048" />
+  <parameter name="FIXED_MAC_ADDRESS" value="0" />
+  <parameter name="RXFIFO_SIZE" value="4096" />
+  <parameter name="SUPPORT_PAUSEFRAME" value="0" />
+  <parameter name="MTU_SIZE" value="1500" />
+  <parameter name="USE_FIXED_MACADDR" value="false" />
+  <parameter name="SINKFIFO_2_SIZE" value="2048" />
+  <parameter name="SRCFIFO_1_SIZE" value="1024" />
+  <parameter name="ENABLE_UDP_CHECKSUM" value="0" />
+  <parameter name="FIXED_PAUSE_VALUE" value="0" />
+  <parameter name="USE_FIXED_PAUSE" value="true" />
+  <parameter name="UDPPORT_VALUE" value="16241" />
+  <parameter name="AVALONMM_FASTMODE" value="0" />
+  <parameter name="SUPPORT_SPEED_10M" value="0" />
+  <parameter name="USE_FIXED_IPADDR" value="false" />
+  <parameter name="IGNORE_RXFCS_CHECK" value="0" />
+  <parameter name="SINKFIFO_3_SIZE" value="2048" />
+  <parameter name="PAUSEFRAME_VALUE" value="65535" />
+  <parameter name="FIFO_BLOCKSIZE" value="64" />
+  <parameter name="SRCFIFO_3_SIZE" value="1024" />
+  <parameter name="SRCFIFO_0_SIZE" value="1024" />
+  <parameter name="SUPPORT_STREAMFIFO" value="1" />
+  <parameter name="PAUSELESS_VALUE" value="0" />
+  <parameter name="SRCFIFO_NUMBER" value="4" />
+  <generatedFiles>
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio.v"
+       type="VERILOG"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_avmm.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_avmm_arbiter.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_avstserver.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_cdb.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_crc32.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_dpram.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_memfifo.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_reset.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_rmii_rx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_rmii_tx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_rxctrl.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_scfifo.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_stream.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_txctrl.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_udp2packet.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio.sdc"
+       type="SDC"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="C:/PROJECT/PERIDOT/peridot_peripherals/peridot_ethio/peridot_ethio_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="udp2wsled_core" as="peridot_ethio_0" />
+  <messages>
+   <message level="Debug" culprit="udp2wsled_core">queue size: 5 starting:peridot_ethio "submodules/peridot_ethio"</message>
+   <message level="Info" culprit="peridot_ethio_0">generating top-level entity peridot_ethio</message>
+   <message level="Info" culprit="peridot_ethio_0"><![CDATA["<b>udp2wsled_core</b>" instantiated <b>peridot_ethio</b> "<b>peridot_ethio_0</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="peridot_serialled:20.1:BIT_PERIOD_COUNT=63,CLOCKFREQ=50000000,DEVICE_FAMILY=MAX 10,LED_SETTINGS_BITPERIOD=1250,LED_SETTINGS_BITSYMBOL0=350,LED_SETTINGS_BITSYMBOL1=900,LED_SETTINGS_RESETWIDTH=280,PART_NAME=10M02DCV36C8G,RESET_BITCOUNT=223,SYMBOL0_COUNT=18,SYMBOL1_COUNT=45"
+   instancePathKey="udp2wsled_core:.:peridot_serialled_0"
+   kind="peridot_serialled"
+   version="20.1"
+   name="peridot_ethio_wsled">
+  <parameter name="SYMBOL0_COUNT" value="18" />
+  <parameter name="LED_SETTINGS_BITSYMBOL1" value="900" />
+  <parameter name="CLOCKFREQ" value="50000000" />
+  <parameter name="PART_NAME" value="10M02DCV36C8G" />
+  <parameter name="LED_SETTINGS_RESETWIDTH" value="280" />
+  <parameter name="RESET_BITCOUNT" value="223" />
+  <parameter name="LED_SETTINGS_BITSYMBOL0" value="350" />
+  <parameter name="DEVICE_FAMILY" value="MAX 10" />
+  <parameter name="SYMBOL1_COUNT" value="45" />
+  <parameter name="BIT_PERIOD_COUNT" value="63" />
+  <parameter name="LED_SETTINGS_BITPERIOD" value="1250" />
+  <generatedFiles>
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/peridot_ethio_wsled.v"
+       type="VERILOG"
+       attributes="TOP_LEVEL_FILE" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="C:/PROJECT/PERIDOT/peridot_peripherals/peridot_ethio/peridot_ethio_wsled_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="udp2wsled_core"
+     as="peridot_serialled_0,peridot_serialled_1,peridot_serialled_2,peridot_serialled_3" />
+  <messages>
+   <message level="Debug" culprit="udp2wsled_core">queue size: 4 starting:peridot_serialled "submodules/peridot_ethio_wsled"</message>
+   <message level="Info" culprit="peridot_serialled_0"><![CDATA["<b>udp2wsled_core</b>" instantiated <b>peridot_serialled</b> "<b>peridot_serialled_0</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_reset_controller:21.1:ADAPT_RESET_REQUEST=0,MIN_RST_ASSERTION_TIME=3,NUM_RESET_INPUTS=1,OUTPUT_RESET_SYNC_EDGES=deassert,RESET_REQUEST_PRESENT=0,RESET_REQ_EARLY_DSRT_TIME=1,RESET_REQ_WAIT_TIME=1,SYNC_DEPTH=2,USE_RESET_REQUEST_IN0=0,USE_RESET_REQUEST_IN1=0,USE_RESET_REQUEST_IN10=0,USE_RESET_REQUEST_IN11=0,USE_RESET_REQUEST_IN12=0,USE_RESET_REQUEST_IN13=0,USE_RESET_REQUEST_IN14=0,USE_RESET_REQUEST_IN15=0,USE_RESET_REQUEST_IN2=0,USE_RESET_REQUEST_IN3=0,USE_RESET_REQUEST_IN4=0,USE_RESET_REQUEST_IN5=0,USE_RESET_REQUEST_IN6=0,USE_RESET_REQUEST_IN7=0,USE_RESET_REQUEST_IN8=0,USE_RESET_REQUEST_IN9=0,USE_RESET_REQUEST_INPUT=0"
+   instancePathKey="udp2wsled_core:.:rst_controller"
+   kind="altera_reset_controller"
+   version="21.1"
+   name="altera_reset_controller">
+  <generatedFiles>
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/altera_reset_controller.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/altera_reset_synchronizer.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/PROJECT/c87_sodalite/C-02/fpga/c02_udp2wsled/udp2wsled_core/synthesis/submodules/altera_reset_controller.sdc"
+       type="SDC"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="C:/develop/quartus/21.1.1le/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="udp2wsled_core" as="rst_controller" />
+  <messages>
+   <message level="Debug" culprit="udp2wsled_core">queue size: 0 starting:altera_reset_controller "submodules/altera_reset_controller"</message>
+   <message level="Info" culprit="rst_controller"><![CDATA["<b>udp2wsled_core</b>" instantiated <b>altera_reset_controller</b> "<b>rst_controller</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>
